@@ -23,10 +23,9 @@ public:
             }
 
             reverse(s.begin()+left,s.begin()+right);
-            
+
             s[right++]=' ';
             left=right;
-            i++;
         }
 
         s.resize(right-1);
