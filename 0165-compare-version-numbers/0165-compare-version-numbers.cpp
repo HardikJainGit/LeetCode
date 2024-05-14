@@ -107,157 +107,44 @@ template <typename Head, typename... Tail> void _print(const Head &H, const Tail
 
 class Solution {
 public:
-
-    int countDots(string s) 
+    vector<int> helper(string s, int i) 
     {
-        int count = 0;
-        for (char c : s)
+        //For bigger numbers analyze after each . separately
+        int num = 0;
+
+        while (i < s.size()) 
         {
-            if (c == '.') {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    void makeEqualLength(int& num1, int& num2, int dots1, int dots2) 
-    {
-        string str1 = to_string(num1);
-        string str2 = to_string(num2);
-
-        if (dots1 < dots2) 
-        {
-            int diff = dots2 - dots1;
-            if (str1.empty()) num1 = 0;
-            else if (str1.length() + diff > to_string(INT_MAX).length()) num1 = INT_MAX;
-            else str1.append(diff, '0');
-            num1 = stoi(str1);
-        } 
-        else if (dots2 < dots1) 
-        {
-            int diff = dots1 - dots2;
-            if (str2.empty()) num2 = 0;
-            else if (str2.length() + diff > to_string(INT_MAX).length()) num2 = INT_MAX;
-            else str2.append(diff, '0');
-            num2 = stoi(str2);
-        }
-    }
-
-    int myAtoi(string s) 
-    {
-        int i=0;
-        int sign=1;
-        long ans=0;
-        int n = s.length();
-
-        while(i<s.length() && s[i]==' ') i++;
-
-        if(s[i]=='-')
-        {
-            sign=-1;
+            if (s[i] == '.') break;
+            else num = num * 10 + (s[i] - '0');
             i++;
         }
-
-        else if(s[i]=='+') i++;
-
-        while(i<s.length())
-        {
-            if(s[i]>='0' && s[i]<='9')
-            {
-                ans=ans*10+(s[i]-'0'); 
-
-                if(ans>INT_MAX && sign==-1)
-                return INT_MIN;
-
-                else if(ans>INT_MAX && sign==1)
-                return INT_MAX;
-
-                i++;
-            }
-            else 
-            {
-                i++;
-                continue;
-            }
-        }
-        return ans*sign;
+        return {num, i}; 
     }
+
     int compareVersion(string version1, string version2) 
     {
-        if(version1 == "99.1.2.00400.3.5.6.7.8.9")
+        int i = 0;
+        int j = 0;
+
+        vector<int> result1, result2;
+
+        while (i < version1.size() || j < version2.size()) 
         {
-            return 1;
+            result1 = helper(version1, i);
+            result2 = helper(version2, j);
+
+            int v1 = result1[0], v2 = result2[0];
+
+            // cout << v1 << " " << v2 <<endl;
+
+            i = result1[1] + 1; j = result2[1] + 1; // since at i & j you have a .
+
+            debug(result1);
+            debug(result2);
+
+            if (v1 > v2) return 1;
+            else if (v1 < v2) return -1;
         }
-        string s1 = "";
-        string s2 = "";
-        string s1_rem = "";
-        string s2_rem = "";
-
-        f(version1.length())
-        {
-            if(version1[i] != '.')
-            {
-                s1 += version1[i];
-            }
-            else
-            {
-                s1_rem = version1.substr(i+1,version1.length());
-                break;
-            }
-        }
-        f(version2.length())
-        {
-            if(version2[i] != '.')
-            {
-                s2 += version2[i];
-            }
-            else
-            {
-                s2_rem = version2.substr(i+1,version2.length());
-                break;
-            }
-        }
-
-        // debug(s1);debug(s2);
-
-        int v1f = myAtoi(s1);
-        int v2f = myAtoi(s2);
-        int v1fr = myAtoi(s1_rem);
-        int v2fr = myAtoi(s2_rem);
-
-        int dots1 = countDots(version1);
-        int dots2 = countDots(version2);
-
-
-        debug(dots1);
-        debug(dots2);
-
-        makeEqualLength(v1fr,v2fr,dots1,dots2);
-
-        debug(v1f);
-        debug(v2f);
-        debug(v1fr);
-        debug(v2fr);
-
-        if(v1f > v2f)
-        {
-            return 1;
-        }
-        else if(v1f < v2f)
-        {
-            return -1;
-        }
-        else if(v1fr > v2fr)
-        {
-            return 1;
-        }
-        else if(v1fr < v2fr)
-        {
-            return -1;
-        }
-        else
-        {
-            return 0;
-        }
+        return 0;
     }
 };
