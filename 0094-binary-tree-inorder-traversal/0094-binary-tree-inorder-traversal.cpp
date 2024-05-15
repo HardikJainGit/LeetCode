@@ -10,27 +10,48 @@
  * };
  */
 
-//Pre Order NLR (DFS)
-//Post Order LRN
-//In Order LNR
-
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) 
     {
-        vector<int> v;
-        inorderHelper(root, v);
-        return v;
-    }
+        vector <int> v;
+        TreeNode* cur = root;
 
-    void inorderHelper(TreeNode* node, vector<int>& v) 
-    {
-        if (node == nullptr) 
+        //LNR
+
+        while(cur)
         {
-            return;
+            if(!cur->left)
+            {
+                v.push_back(cur->val);
+                cur = cur -> right;
+            }
+            else
+            {
+                // rightmost of left
+                TreeNode* prev = cur -> left;  
+
+                while(prev -> right && prev -> right != cur)
+                {
+                    prev = prev -> right;
+                }
+
+                if(!prev -> right)
+                {
+                    prev -> right = cur;
+                    cur = cur -> left;
+                }
+
+                else
+                {
+                    prev -> right = NULL;
+                    v.push_back(cur->val);
+                    cur = cur -> right;
+                }
+            }
+            
         }
-        inorderHelper(node->left, v);
-        v.push_back(node->val);
-        inorderHelper(node->right, v);
+
+        return v;
     }
 };
