@@ -30,18 +30,15 @@ public:
         root -> right = temp_l;
         root -> left = NULL;
 
-        TreeNode* temp_l_prev = NULL;
-
         if(!temp_l)
         temp_l = root;
 
-        while(temp_l)
+        while(temp_l -> right)
         {
-            temp_l_prev = temp_l;
             temp_l = temp_l -> right;
         }
 
-        temp_l_prev -> right = temp_r;
+        temp_l -> right = temp_r;
 
     }
 };
