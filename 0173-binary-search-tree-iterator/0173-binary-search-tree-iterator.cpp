@@ -1,60 +1,37 @@
 class BSTIterator {
-private:
-
-    vector<int> inorder;
-    int index = 0;
-
-    void inorderTraversal(TreeNode* root,vector<int> &v) 
-    {
-        
-        TreeNode* cur = root;
-
-        while(cur)
-        {
-            if(!cur->left)
-            {
-                v.push_back(cur->val);
-                cur = cur -> right;
-            }
-            else
-            {
-                TreeNode* prev = cur -> left;  
-
-                while(prev -> right && prev -> right != cur)
-                {
-                    prev = prev -> right;
-                }
-
-                if(!prev -> right)
-                {
-                    prev -> right = cur;
-                    cur = cur -> left;
-                }
-
-                else
-                {
-                    prev -> right = NULL;
-                    v.push_back(cur->val);
-                    cur = cur -> right;
-                }
-            }
-            
-        }
-    }
-
 public:
+
+    stack <TreeNode*> st;
+
     BSTIterator(TreeNode* root)
     {
-        inorderTraversal(root, inorder);
+        while(root)
+        {
+            st.push(root);
+            root = root -> left;
+        }
     }
 
     int next() 
     {
-        return inorder[index++];
+        TreeNode* nxt_small = st.top();
+        st.pop();
+        int ret = nxt_small -> val;
+        TreeNode* cur = nxt_small -> right;
+
+        if(cur)
+        {
+            while(cur)
+            {
+                st.push(cur);
+                cur = cur -> left;
+            }
+        }
+        return ret;
     }
 
     bool hasNext() 
     {
-        return index < inorder.size();
+        return st.size();
     }
 };
