@@ -1,67 +1,36 @@
 class Solution {
 public:
-    vector<int> inorderTraversal(TreeNode* root) 
+    void dfs(TreeNode* root, int &f, long long mi, long long mx)
     {
-        vector <int> v;
-        TreeNode* cur = root;
-
-        //LNR
-
-        while(cur)
+        if (!root)
         {
-            if(!cur->left)
-            {
-                v.push_back(cur->val);
-                cur = cur -> right;
-            }
-            else
-            {
-                // rightmost of left
-                TreeNode* prev = cur -> left;  
-
-                while(prev -> right && prev -> right != cur)
-                {
-                    prev = prev -> right;
-                }
-
-                if(!prev -> right)
-                {
-                    prev -> right = cur;
-                    cur = cur -> left;
-                }
-
-                else
-                {
-                    prev -> right = NULL;
-                    v.push_back(cur->val);
-                    cur = cur -> right;
-                }
-            }
-            
+            return;
         }
 
-        return v;
+        if (root->val <= mi || root->val >= mx)
+        {
+            f = 1;
+        }
+
+       // When going to left ensure lesser than root -> val
+
+        dfs(root->left, f, mi, root->val);  
+
+        // When going to right ensure greater than root -> val
+
+        dfs(root->right, f, root->val, mx);
     }
 
-    bool isSorted(vector<int>& vec) 
-    {
-        bool f = true;
-        
-        for (int i = 1; i < vec.size(); i++) 
-        {
-            if (vec[i - 1] >= vec[i]) {
-                f = false;
-            }
-        }
-            return f;
-    }
-    
-    
-    
     bool isValidBST(TreeNode* root) 
     {
-        vector<int> inorder;
-        inorder = inorderTraversal(root);
-        return isSorted(inorder);
+        if(!root -> right && !root -> left)
+        {
+            return 1;
+        }
+        int f = 0;
+        long long mx = LLONG_MAX;
+        long long mi = LLONG_MIN;
+        dfs(root,f,mi,mx);
+        return !f;
     }   
 };
