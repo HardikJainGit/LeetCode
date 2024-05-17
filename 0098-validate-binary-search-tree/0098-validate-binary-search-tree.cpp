@@ -1,24 +1,32 @@
 class Solution {
 public:
-    void dfs(TreeNode* root, int &f, long long mi, long long mx)
+    class ds
+    {
+        public:
+        long long mx; // Max left
+        long long mi; // Min right
+        bool isBST;
+    };
+    ds dfs(TreeNode* root)
     {
         if (!root)
         {
-            return;
+            return {LLONG_MIN, LLONG_MAX, true};
         }
 
-        if (root->val <= mi || root->val >= mx)
-        {
-            f = 1;
-        }
+        // Bottom up dfs
 
-       // When going to left ensure lesser than root -> val
+        ds l = dfs(root->left);
+        ds r = dfs(root->right);
 
-        dfs(root->left, f, mi, root->val);  
+        ds cur;
+        
+        cur.mx = max(static_cast<long long>(root->val), r.mx);
+        cur.mi = min(static_cast<long long>(root -> val) , l.mi);
+        
+        cur.isBST = l.isBST && r.isBST && (static_cast<long long>(root -> val) > l.mx && static_cast<long long>(root -> val) < r.mi);
 
-        // When going to right ensure greater than root -> val
-
-        dfs(root->right, f, root->val, mx);
+        return cur;
     }
 
     bool isValidBST(TreeNode* root) 
@@ -27,10 +35,6 @@ public:
         {
             return 1;
         }
-        int f = 0;
-        long long mx = LLONG_MAX;
-        long long mi = LLONG_MIN;
-        dfs(root,f,mi,mx);
-        return !f;
+        return dfs(root).isBST;
     }   
 };
