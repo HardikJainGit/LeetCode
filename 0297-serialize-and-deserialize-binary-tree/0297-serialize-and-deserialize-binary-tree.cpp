@@ -1,140 +1,152 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void __print(int x) { cout << x; }
+void __print(long x) { cout << x; }
+void __print(long long x) { cout << x; }
+void __print(unsigned x) { cout << x; }
+void __print(unsigned long x) { cout << x; }
+void __print(unsigned long long x) { cout << x; }
+void __print(float x) { cout << x; }
+void __print(double x) { cout << x; }
+void __print(long double x) { cout << x; }
+void __print(char x) { cout << '\'' << x << '\''; }
+void __print(const char *x) { cout << '\"' << x << '\"'; }
+void __print(const string &x) { cout << '\"' << x << '\"'; }
+void __print(bool x) { cout << (x ? "true" : "false"); }
+template <typename A> void __print(const A &x);
+template <typename A, typename B> void __print(const pair<A, B> &p);
+template <typename... A> void __print(const tuple<A...> &t);
+template <typename T> void __print(stack<T> s);
+template <typename T> void __print(queue<T> q);
+template <typename T, typename... U> void __print(priority_queue<T, U...> q);
+template <typename A> void __print(const A &x) {
+    bool first = true;
+    cout << '{';
+    for (const auto &i : x) {
+        cout << (first ? "" : ","), __print(i);
+        first = false;
+    }
+    cout << '}';
+}
+template <typename A, typename B> void __print(const pair<A, B> &p) {
+    cout << '(';
+    __print(p.first);
+    cout << ',';
+    __print(p.second);
+    cout << ')';
+}
+template <typename... A> void __print(const tuple<A...> &t) {
+    bool first = true;
+    cout << '(';
+    apply([&first](const auto &...args) { ((cout << (first ? "" : ","), __print(args), first = false), ...); }, t);
+    cout << ')';
+}
+template <typename T> void __print(stack<T> s) {
+    vector<T> debugVector;
+    while (!s.empty()) {
+        T t = s.top();
+        debugVector.push_back(t);
+        s.pop();
+    }
+    reverse(debugVector.begin(), debugVector.end());
+    __print(debugVector);
+}
+template <typename T> void __print(queue<T> q) {
+    vector<T> debugVector;
+    while (!q.empty()) {
+        T t = q.front();
+        debugVector.push_back(t);
+        q.pop();
+    }
+    __print(debugVector);
+}
+template <typename T, typename... U> void __print(priority_queue<T, U...> q) {
+    vector<T> debugVector;
+    while (!q.empty()) {
+        T t = q.top();
+        debugVector.push_back(t);
+        q.pop();
+    }
+    __print(debugVector);
+}
+void _print() { cout << "]\n"; }
+template <typename Head, typename... Tail> void _print(const Head &H, const Tail &...T) {
+    __print(H);
+    if (sizeof...(T)) cout << ", ";
+    _print(T...);
+}
+#ifndef ONLINE_JUDGE
+#define debug(...) cout << "Line:" << __LINE__ << " [" << #__VA_ARGS__ << "] = ["; _print(__VA_ARGS__)
+#else
+#define debug(...)
+#endif
+
+#define py cout << "YES\n";
+#define pn cout << "NO\n";
+#define vi vector <int>
+#define vvi vector<vector<int>>
+#define vp vector<pair<int,int>>
+#define pi pair<int,int>
+#define pb push_back
+#define ff first
+#define ss second
+#define rev(v) reverse(v.begin(), v.end())
+#define srt(v) sort(v.begin(), v.end())
+#define minv(v) *min_element(v.begin(), v.end())
+#define maxv(v) *max_element(v.begin(), v.end())
+#define all(v) v.begin(),v.end()
+#define in(x) int x; cin>>x;
+#define f(b) for(int i=0;i<b;i++)
+#define fz(i,a,b) for(int i=a;i<b;i++)
+#define inp(a,n) int a[n]; fz(i,0,n) cin>>a[i];
+#define inpv(a,n) vector <int> a; fz(i,0,n) {int x; cin>>x; a.pb(x);}
+#define endl '\n'
+#define pr(x) cout<<x<<endl;
+#define sz(x) ((int)(x).size())
+
 class Codec {
 public:
 
-    string levelOrder(TreeNode* root) 
+    void dfs_s(TreeNode* root , string &s)
     {
-        if (!root) 
+        if(!root)
         {
-            return "";
+            s += "N ";
+            return;
         }
-
-        queue<TreeNode*> q;
-        q.push(root);
-        string ret;
-
-        while (!q.empty()) 
-        {
-            int k = q.size();
-            bool hasNonNull = false;
-
-            for (int i = 0; i < k; i++) 
-            {
-                TreeNode* cur = q.front();
-                q.pop();
-
-                if (!cur) 
-                {
-                    ret += "null ";
-                } 
-                else 
-                {
-                    ret += to_string(cur->val) + " ";
-                    q.push(cur->left);
-                    q.push(cur->right);
-                    hasNonNull = true; // At least one non NULL in a level
-                }
-            }
-
-            if (!hasNonNull) // Implies given level is all NULL
-            {
-                // auto pos = ret.find_last_not_of("null ");
-                // if (pos != string::npos) 
-                // {
-                //     ret.erase(pos + 1); // remove all chars from pos + 1 till end
-                // }
-                // break;
-
-                for(int i = ret.length() - 1; i>=0 ; i--)
-                {
-                    if(ret[i] == 'n' || ret[i] == 'u' || ret[i] == 'l' || ret[i] == ' ')
-                    {
-                        ret.pop_back();
-                        continue;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-            }
+        s += to_string(root -> val) + ' ';
+        dfs_s(root -> left,s);
+        dfs_s(root -> right,s);
     }
-
-        if (!ret.empty() && ret.back() == ' ') 
-        {
-            ret.pop_back();
-        }
-
-        return ret;
-    }
-
     string serialize(TreeNode* root) 
     {
-        string ret = levelOrder(root);
-        // debug(ret);
-        return ret;
+        string s;
+        dfs_s(root,s);
+        cout << s;
+        return s;
     }
 
-    TreeNode* deserialize(string data) 
-    {
-        // debug(data);
-
-        if(!data.length())
-        {
-            return NULL;
-        }
-
-        stringstream s(data);
-        string val;
-        s >> val; // extracts a string from the stringstream and stores till whitespace comes
-
-        if (val == "null") 
-        {
-            return nullptr;
-        }
-
-        TreeNode* root = new TreeNode(stoi(val));
-        queue<TreeNode*> q;
-        q.push(root);
-        
-        while (!q.empty()) 
-        {
-            TreeNode* node = q.front();
-            q.pop();
-
-            if (!(s >> val)) 
-            break;
-
-            if (val != "null") 
+    TreeNode* dfs(stringstream &s) {
+            string str;
+            if (!(s >> str)) 
             {
-                if (isdigit(val[0]) || (val[0] == '-' && isdigit(val[1]))) 
-                {
-                    node->left = new TreeNode(stoi(val));
-                    q.push(node->left);
-                }
-                else 
-                {
-                    node->left = NULL;
-                }
+                return NULL;
             }
-
-            if (!(s >> val)) 
-            break;
-
-            if (val != "null") 
+            // cout << str;
+            if (str == "N") 
             {
-                if (isdigit(val[0]) || (val[0] == '-' && isdigit(val[1]))) 
-                {
-                    node->right = new TreeNode(stoi(val));
-                    q.push(node->right);
-                }
-                else 
-                {
-                    node->right = NULL;
-                }
+                return NULL;
             }
+            TreeNode* root = new TreeNode(stoi(str));
+            root->left = dfs(s);
+            root->right = dfs(s);
+            return root;
         }
-        
-        return root;
-    }
 
-};
+        TreeNode* deserialize(string data) 
+        {
+            stringstream s(data);
+            return dfs(s);
+        }
+    };
