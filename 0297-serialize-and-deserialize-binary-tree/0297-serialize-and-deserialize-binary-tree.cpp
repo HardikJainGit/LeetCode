@@ -20,7 +20,8 @@ public:
         return s;
     }
 
-    TreeNode* dfs(stringstream &s) {
+    TreeNode* dfs(stringstream &s) 
+        {
             string str;
             if (!(s >> str)) 
             {
