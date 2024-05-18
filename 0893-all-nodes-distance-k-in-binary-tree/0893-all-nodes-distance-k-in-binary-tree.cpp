@@ -1,12 +1,3 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
     void dfs_m(TreeNode* root , TreeNode* prev,map<TreeNode*,TreeNode*> &m)
@@ -36,10 +27,6 @@ public:
         }
         
         vis[root]=1;
-        
-        int lh= -1;
-        int rh= -1;
-        int ph= -1;
         
         if(!vis[root->left])
         dist_k(root->left, par, vis , count + 1 , k , v);
