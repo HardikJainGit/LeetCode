@@ -109,7 +109,7 @@ public:
                 return d[row][col];
             }
 
-            for (int i = 0; i < 4; i++) 
+            f(4)
             {
                 int nrow = row + delrow[i]; 
                 int ncol = col + delcol[i]; 
