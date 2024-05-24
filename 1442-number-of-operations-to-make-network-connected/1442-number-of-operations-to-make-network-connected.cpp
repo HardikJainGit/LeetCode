@@ -13,6 +13,31 @@ using namespace std;
 #define ff first
 #define ss second
 
+struct DSU
+{
+    int n;
+    vi p;
+    DSU(int _n)
+    {
+        n = _n;
+        p.assign(n + 1,0);
+        fz(i,1,n)
+        p[i] = i;
+    }
+    int ultpar(int i)
+    {
+        if (p[i] == i)
+        return i;
+        return p[i] = ultpar(p[i]);
+    }
+    void dsu_union(int u,int v)
+    {
+        u = ultpar(u),v = ultpar(v);
+        if(u==v) return;
+        p[v] = u;
+    }
+};
+
 class Solution {
 public:
     void dfs(int node, vector<int> &vis, vector<vector<int>>& adj) 
@@ -28,6 +53,7 @@ public:
     }
     int makeConnected(int n, vector<vector<int>>& connections) 
     {
+        DSU dsu(n);
         int t_edg = sz(connections);
         vvi adj(n);
 
@@ -35,6 +61,7 @@ public:
         {
             adj[it[0]].pb(it[1]);
             adj[it[1]].pb(it[0]);
+            dsu.dsu_union(it[0],it[1]);
         }
 
         int cc = 0;
@@ -42,12 +69,23 @@ public:
 
         f(n)
         {
-            if(!vis[i])
+            int p = dsu.ultpar(i);
+            if(!vis[p])
             {
                 cc += 1;
-                dfs(i,vis,adj);
-            }
+                vis[p] = 1;
+            }a
         }
+
+        // f(n)
+        // {
+        //     if(!vis[i])
+        //     {
+        //         cc += 1;
+        //         dfs(i,vis,adj);
+        //     }
+        // }
+
         return (t_edg >= n-1) ? (cc - 1) : -1;
     }
 };
