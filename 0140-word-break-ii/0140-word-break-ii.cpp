@@ -1,3 +1,5 @@
+// same as palindrome partitioning
+
 class Solution {
 public: 
     void dfs(int i, string s, vector<string> &wordDict, vector<string> &res,vector <string> &cur)
