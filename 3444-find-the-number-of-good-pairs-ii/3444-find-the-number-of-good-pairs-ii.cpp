@@ -1,46 +1,28 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-#define vi vector<int>
-#define vvi vector<vector<int>>
-#define vvvi vector<vector<vi>>
-#define f(b) for(int i=0;i<b;i++)
-#define fz(i,a,b) for(int i=a;i<b;i++)
-#define sz(x) ((int)(x).size())
-#define vp vector<pair<int,int>>
-#define pi pair<int,int>
-#define pb push_back
-#define ff first
-#define ss second
-
 class Solution {
 public:
     long long numberOfPairs(vector<int>& nums1, vector<int>& nums2, int k) 
     {
-        unordered_map<int,int> m;
-        
-        f(sz(nums2))
-        {
-            m[nums2[i] * k] += 1;
+        unordered_map<long long, long long> m;
+
+        for (int num : nums2) {
+            m[(long long) num * k]++;
         }
+
+        vector<long long> multiple_ofnums2_countinnum1(*max_element(nums1.begin(), nums1.end()) + 1, 0);
+
+        for (auto& [mul, cc] : m) {
+            for (long long j = mul; j < multiple_ofnums2_countinnum1.size(); j += mul) {
+                multiple_ofnums2_countinnum1[j] += cc;
+            }
+        }
+
 
         long long ret = 0;
 
-        for(auto it : nums1)
-        {
-            int sqrt_n = sqrt(it);
-            fz(i,1,sqrt_n+1)
-            {
-                if ((it) % i == 0) 
-                {   
-                    ret += m[i];
-                    if ((it) / i != i) 
-                    { 
-                        ret += m[(it)/i];
-                    }
-                }
-            }
+        for (int num : nums1) {
+            ret += multiple_ofnums2_countinnum1[num];
         }
+
         return ret;
     }
 };
