@@ -18,49 +18,37 @@ public:
     bool stoneGame(vector<int>& piles) 
     {
         int n = sz(piles);
-        int l = 0;
-        int r = n - 1;
 
-        int alice = 0;
-        int bob = 0;
+        vector<vp> dp(sz(piles) , vp(sz(piles),{0,0}));
 
-        bool alice_c = true;
-        bool bob_c = false;
-
-        while(l <= r)
+        f(n)
         {
-            if(piles[l] > piles[r])
+            fz(j,0,n)
             {
-                if(alice_c)
+                if(i == j)
                 {
-                    alice += piles[l];
-                    l += 1;
-                    alice_c = !alice_c;
-                }
-                else
-                {
-                    bob += piles[l];
-                    l += 1;
-                    alice_c = !alice_c;
-                }
-            }
-            else
-            {
-                if(alice_c)
-                {
-                    alice += piles[r];
-                    r -= 1;
-                    alice_c = !alice_c;
-                }
-                else
-                {
-                    bob += piles[r];
-                    r -= 1;
-                    alice_c = !alice_c;
+                    dp[i][j].ff = piles[i];
+                    dp[i][j].ss = 0;
                 }
             }
         }
 
-        return (alice > bob);
+        f(n-1)
+        {
+            fz(j,1,n)
+            {
+                dp[i][j].ff = max(piles[i] + dp[i+1][j].ss , piles[j] + dp[i][j-1].ss);
+                if(piles[i] + dp[i+1][j].ss > piles[j] + dp[i][j-1].ss)
+                {
+                    dp[i][j].ss = dp[i+1][j].ff;
+                }
+                else
+                {
+                    dp[i][j].ff = dp[i][j-1].ff;
+                }
+             }
+        }
+
+        return dp[0][n-1].ff > dp[0][n-1].ss;
     }
 };
