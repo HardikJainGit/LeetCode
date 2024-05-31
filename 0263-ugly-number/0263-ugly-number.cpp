@@ -1,52 +1,19 @@
 class Solution {
 public:
-
-    bool isUgly(int n) 
-    {
-        vector<int> primeFactors;
-        // Check for the number of 2s that divide n
-        while (n % 2 == 0) 
-        {
-            primeFactors.push_back(2);
-            n /= 2;
+    bool isUgly(int n) {
+        if(n<=0){
+            return false;
         }
-
-        // Check for the number of 3s that divide n
-        while (n % 3 == 0) 
-        {
-            primeFactors.push_back(3);
-            n /= 3;
+        
+        while(n%2==0){
+            n=n/2;
         }
-
-        // n must be odd at this point, so we can skip even numbers
-        for (int i = 5; i * i <= n; i += 6) 
-        {
-            while (n % i == 0) 
-            {
-                primeFactors.push_back(i);
-                n /= i;
-            }
-            while (n % (i + 2) == 0) 
-            {
-                primeFactors.push_back(i + 2);
-                n /= (i + 2);
-            }
+        while(n%3==0){
+            n=n/3;
         }
-
-        // This condition is to check if n is a prime number
-        // greater than 4
-        if (n > 4) 
-        {
-            primeFactors.push_back(n);
+        while(n%5==0){
+            n=n/5;
         }
-
-        for(auto it : primeFactors)
-        {
-            if(it!=2 && it!=3 && it!=5)
-            {
-                return false;
-            }
-        }
-        return true;
+        return n==1;
     }
 };
