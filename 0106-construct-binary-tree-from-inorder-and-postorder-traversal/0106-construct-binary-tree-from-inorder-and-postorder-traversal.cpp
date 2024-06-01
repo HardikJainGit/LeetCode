@@ -2,24 +2,41 @@ class Solution {
 public:
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) 
     {
-         if(!postorder.size() || !inorder.size())
+        if(postorder.empty() || inorder.empty()) 
         {
             return NULL;
         }
 
-        TreeNode* root = new TreeNode (postorder.back());
+        int n = inorder.size();
+        TreeNode* root = new TreeNode(postorder[n - 1]); // root is the last element in postorder
+        stack<TreeNode*> st;
+        st.push(root);
+        int inorderIndex = n - 1;
 
-        int idx = find(inorder.begin(), inorder.end(), postorder.back()) - inorder.begin();
+        for(int i = n - 2; i >= 0; i--) 
+        {
+            TreeNode* currentNode = st.top();
 
-        vector<int> leftpostorder(postorder.begin(), postorder.begin() + idx); // idx is shifted to the left by 1
-        vector<int> rightpostorder(postorder.begin() + idx, postorder.end() - 1);
-        vector<int> leftInorder(inorder.begin(), inorder.begin() + idx);
-        vector<int> rightInorder(inorder.begin() + idx + 1, inorder.end());
+            // go to right leaf
+            if(currentNode->val != inorder[inorderIndex]) 
+            {
+                currentNode->right = new TreeNode(postorder[i]);
+                st.push(currentNode->right);
+            } 
+            else 
+            {
+                while(!st.empty() && st.top()->val == inorder[inorderIndex]) 
+                {
+                    currentNode = st.top();
+                    st.pop();
+                    --inorderIndex;
+                }
 
-        root->left = buildTree(leftInorder,leftpostorder);
-        root->right = buildTree(rightInorder,rightpostorder);
+                currentNode->left = new TreeNode(postorder[i]);
+                st.push(currentNode->left);
+            }
+        }
 
         return root;
     }
 };
-
