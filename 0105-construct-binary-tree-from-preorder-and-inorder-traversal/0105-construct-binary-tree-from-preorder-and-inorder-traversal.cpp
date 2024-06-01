@@ -2,22 +2,43 @@ class Solution {
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) 
     {
-        if(!preorder.size() || !inorder.size())
+        if(preorder.empty() || inorder.empty()) 
         {
             return NULL;
         }
 
-        TreeNode* root = new TreeNode (preorder[0]);
+        TreeNode* root = new TreeNode(preorder[0]);
 
-        int idx = find(inorder.begin(), inorder.end(), preorder[0]) - inorder.begin();
+        stack<TreeNode*> st;
 
-        vector<int> leftPreorder(preorder.begin() + 1, preorder.begin() + 1 + idx);
-        vector<int> rightPreorder(preorder.begin() + 1 + idx, preorder.end());
-        vector<int> leftInorder(inorder.begin(), inorder.begin() + idx);
-        vector<int> rightInorder(inorder.begin() + idx + 1, inorder.end());
+        st.push(root);
+        int inorderIndex = 0;
 
-        root->left = buildTree(leftPreorder, leftInorder);
-        root->right = buildTree(rightPreorder, rightInorder);
+        for(int i = 1; i < preorder.size(); i++) 
+        {
+            TreeNode* currentNode = st.top();
+
+            // go to left leaf
+
+            if(currentNode->val != inorder[inorderIndex]) 
+            {
+                currentNode->left = new TreeNode(preorder[i]);
+                st.push(currentNode->left);
+            } 
+            
+            else 
+            {
+                while(!st.empty() && st.top()->val == inorder[inorderIndex]) 
+                {
+                    currentNode = st.top();
+                    st.pop();
+                    ++inorderIndex;
+                }
+                
+                currentNode->right = new TreeNode(preorder[i]);
+                st.push(currentNode->right);
+            }
+        }
 
         return root;
     }
