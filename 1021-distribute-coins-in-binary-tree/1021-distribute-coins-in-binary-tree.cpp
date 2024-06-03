@@ -24,7 +24,39 @@ using namespace std;
  
 class Solution {
 public:
-    void dfs(int &res , TreeNode* node,unordered_map<TreeNode* , pi> &m)
+    // void dfs(int &res , TreeNode* node,unordered_map<TreeNode* , pi> &m)
+    // {
+    //     if(!node)
+    //     {
+    //         return;
+    //     }
+
+    //     dfs(res,node->right,m);
+    //     dfs(res,node->left,m);
+
+    //     if(!node -> left && !node -> right)
+    //     {
+    //         m[node] = {1,node -> val};
+    //     }
+    //     else if (!node->right && node->left)
+    //     {
+    //         m[node] = {1 + m[node->left].ff , m[node->left].ss + node->val};
+    //     }
+    //     else if (!node->left && node->right)
+    //     {
+    //         m[node] = {1 + m[node->right].ff , m[node->right].ss + node->val};
+    //     }
+    //     else
+    //     {
+    //         m[node] = {1 + m[node->right].ff + m[node->left].ff , m[node->right].ss + m[node->left].ss + node->val};
+    //     }
+
+    //     res += abs(m[node].ff - m[node].ss);
+        
+    //     // return (node->left->val - 1 + node->right->val - 1);
+    //     return;
+    // }
+    void dfs(int &res , TreeNode* node,unordered_map<TreeNode* , int> &m)
     {
         if(!node)
         {
@@ -36,29 +68,29 @@ public:
 
         if(!node -> left && !node -> right)
         {
-            m[node] = {1,node -> val};
+            m[node] = (-1 + node -> val);
         }
         else if (!node->right && node->left)
         {
-            m[node] = {1 + m[node->left].ff , m[node->left].ss + node->val};
+            m[node] = (m[node->left] + node->val - 1);
         }
         else if (!node->left && node->right)
         {
-            m[node] = {1 + m[node->right].ff , m[node->right].ss + node->val};
+            m[node] = (-1 + m[node->right] + node->val);
         }
         else
         {
-            m[node] = {1 + m[node->right].ff + m[node->left].ff , m[node->right].ss + m[node->left].ss + node->val};
+            m[node] = (-1 + m[node->left] + m[node->right] + node->val);
         }
 
-        res += abs(m[node].ff - m[node].ss);
+        res += abs(m[node]);
         
         // return (node->left->val - 1 + node->right->val - 1);
         return;
     }
     int distributeCoins(TreeNode* root) 
     {
-        unordered_map<TreeNode* , pi> m; // sz coins
+        unordered_map<TreeNode* , int> m; // sz coins
         int res = 0;
         dfs(res,root,m);
         return res;
