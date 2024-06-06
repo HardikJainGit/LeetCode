@@ -5,6 +5,7 @@
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 
 
 # Dynamic Programming
@@ -37,6 +38,7 @@
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # String
 |  |
@@ -60,3 +62,7 @@
 |  |
 | ------- |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
+# Simulation
+|  |
+| ------- |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
