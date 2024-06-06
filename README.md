@@ -2,6 +2,7 @@
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/HardikJainGit/LeetCode/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
 
 
 # Dynamic Programming
@@ -28,3 +29,11 @@
 |  |
 | ------- |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
+# Hash Table
+|  |
+| ------- |
+| [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
+# String
+|  |
+| ------- |
+| [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
