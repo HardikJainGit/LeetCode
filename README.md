@@ -4,6 +4,7 @@
 | [0673-number-of-longest-increasing-subsequence](https://github.com/HardikJainGit/LeetCode/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
+| [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
 
 
 # Dynamic Programming
@@ -35,6 +36,7 @@
 | ------- |
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
+| [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # String
 |  |
