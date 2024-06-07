@@ -35,36 +35,61 @@
 class Solution {
 public:
 
-    void dfs(TreeNode* root , int targetSum , int &cc,long long sum)
+    // void dfs(TreeNode* root , int targetSum , int &cc,long long sum)
+    // {
+    //     // ^^
+    //     // --
+
+    //     if(!root)
+    //     {
+    //         return;
+    //     }
+
+    //     if(sum + root -> val == targetSum)
+    //     {
+    //         cc += 1;
+    //     }
+
+    //     dfs(root -> right , targetSum , cc , sum + root ->val);
+    //     dfs(root -> left , targetSum , cc ,sum + root -> val);
+
+    // }
+
+    // void dfs_p(TreeNode* root , int targetSum , int&cc)
+    // {
+    //     if(!root)
+    //     {
+    //         return;
+    //     }
+
+    //     dfs(root,targetSum,cc,0);
+    //     dfs_p(root->right,targetSum,cc);
+    //     dfs_p(root->left,targetSum,cc);
+    // }
+
+    int dfs(TreeNode* root, int targetSum, long long currentSum, unordered_map<long long, long long>& ps) 
     {
-        // ^^
-        // --
-
-        if(!root)
+        if (!root) 
         {
-            return;
+            return 0;
         }
 
-        if(sum + root -> val == targetSum)
-        {
-            cc += 1;
-        }
+        currentSum += root->val;
 
-        dfs(root -> right , targetSum , cc , sum + root ->val);
-        dfs(root -> left , targetSum , cc ,sum + root -> val);
+        // curr sum - (curr sum - target) = target as these paths are from root
+        // root to curr node - root to some node whose curr sum is curr sum - target
+        // we can take the path of that node to curr to get target
 
-    }
+        int count = ps[currentSum - targetSum];
 
-    void dfs_p(TreeNode* root , int targetSum , int&cc)
-    {
-        if(!root)
-        {
-            return;
-        }
+        ps[currentSum]++;
 
-        dfs(root,targetSum,cc,0);
-        dfs_p(root->right,targetSum,cc);
-        dfs_p(root->left,targetSum,cc);
+        count += dfs(root->left, targetSum, currentSum, ps);
+        count += dfs(root->right, targetSum, currentSum, ps);
+
+        ps[currentSum]--;
+
+        return count;
     }
 
     int pathSum(TreeNode* root, int targetSum) 
@@ -73,8 +98,10 @@ public:
         {
             return 0;
         }
-        int cc = 0;
-        dfs_p(root , targetSum , cc);
-        return cc;
+
+        unordered_map<long long, long long> ps;
+        ps[0] = 1;
+        return dfs(root, targetSum, 0, ps);
     }
+
 };
