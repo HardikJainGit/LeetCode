@@ -6,6 +6,7 @@
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+| [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 
 
 # Dynamic Programming
@@ -42,6 +43,7 @@
 |  |
 | ------- |
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
+| [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -59,6 +61,7 @@
 # Sorting
 |  |
 | ------- |
+| [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # Stack
 |  |
@@ -72,3 +75,7 @@
 |  |
 | ------- |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+# Counting Sort
+|  |
+| ------- |
+| [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
