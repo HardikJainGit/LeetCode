@@ -1,83 +1,35 @@
-#include <string>
-
 class Solution {
-public:
-    int romanToInt(std::string s) {
-        int n = s.length();
-        int ans = 0;
-        for(int i = 0; i < n; i++) 
-        {
-            if (s[i] == 'I') {
-                if (i + 1 < n && s[i + 1] == 'V') 
-                {
-                    ans += 4;
-                    i++;
-                } 
-                else if (i + 1 < n && s[i + 1] == 'X') 
-                {
-                    ans += 9;
-                    i++; 
-                } 
-                else 
-                {
-                    ans += 1;
-                }
-            }
-            
-            else if (s[i] == 'V')
-            {
-                ans += 5;
-            } 
-            
-            else if (s[i] == 'X') 
-            {
-                if (i + 1 < n && s[i + 1] == 'L') 
-                {
-                    ans += 40;
-                    i++; 
-                } 
-                else if (i + 1 < n && s[i + 1] == 'C') 
-                {
-                    ans += 90;
-                    i++; 
-                } 
-                else {
-                    ans += 10;
-                }
-            } 
+public : 
 
-            else if (s[i] == 'L') 
-            {
-                ans += 50;
-            } 
-            
-            else if (s[i] == 'C') 
-            {
-                if (i + 1 < n && s[i + 1] == 'D') 
-                {
-                    ans += 400;
-                    i++; 
-                } 
-                else if (i + 1 < n && s[i + 1] == 'M') 
-                {
-                    ans += 900;
-                    i++; 
-                } 
-                else {
-                    ans += 100;
-                }
-            } 
-            
-            else if (s[i] == 'D')
-            {
-                ans += 500;
-            } 
-            
-            else if (s[i] == 'M') 
-            {
-                ans += 1000;
-            }
+int romanToInt(const std::string& s) 
+{
+    std::unordered_map<char, int> romanMap = {
+        {'I', 1},
+        {'V', 5},
+        {'X', 10},
+        {'L', 50},
+        {'C', 100},
+        {'D', 500},
+        {'M', 1000}
+    };
+
+    int total = 0;
+    int n = s.length();
+
+    for (int i = 0; i < n - 1; i++) 
+    {
+        if (romanMap[s[i]] < romanMap[s[i + 1]]) 
+        {
+            total -= romanMap[s[i]];
+        } 
+        else 
+        {
+            total += romanMap[s[i]];
         }
-        return ans;
     }
+
+    total += romanMap[s[n-1]];
+
+    return total;
+}
 };
