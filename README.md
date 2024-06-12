@@ -7,6 +7,7 @@
 | [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
+| [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
 
 
 # Dynamic Programming
@@ -61,6 +62,7 @@
 # Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # Stack
@@ -79,3 +81,7 @@
 |  |
 | ------- |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
+# Two Pointers
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
