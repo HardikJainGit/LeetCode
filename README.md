@@ -32,6 +32,7 @@
 |  |
 | ------- |
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
+| [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Binary Tree
@@ -91,3 +92,15 @@
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/HardikJainGit/LeetCode/tree/master/0013-roman-to-integer) |
+# Breadth-First Search
+|  |
+| ------- |
+| [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
+# Union Find
+|  |
+| ------- |
+| [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
+# Graph
+|  |
+| ------- |
+| [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
