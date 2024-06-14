@@ -50,15 +50,14 @@ public:
                 // debug(cc);
                 // debug(nums);
                 // m[nums[i]] -= 1;
-                // while(nums[i] <= nums[i-1])
-                // {
-                //     cc += 1;
-                //     nums[i] += 1;
-                // }
-                while(nums[i] <= nums[i-1])
+                if(nums[i] > nums[i-1])
                 {
-                    cc += 1 + nums[i-1] - nums[i];
-                    nums[i] = 1 + nums[i-1];
+                    continue;
+                }
+                while(nums[i] != 1 + nums[i-1])
+                {
+                    cc += 1;
+                    nums[i] += 1;
                 }
                 // m[1 + nums[i-1]] += 1;
             // }
