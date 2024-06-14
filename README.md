@@ -8,6 +8,7 @@
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
+| [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 
 
 # Dynamic Programming
@@ -60,12 +61,14 @@
 # Greedy
 |  |
 | ------- |
+| [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # Sorting
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
+| [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 # Stack
@@ -83,6 +86,7 @@
 # Counting Sort
 |  |
 | ------- |
+| [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 # Two Pointers
 |  |
