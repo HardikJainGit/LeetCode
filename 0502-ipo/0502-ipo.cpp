@@ -63,7 +63,10 @@ public:
                 // debug(*l);
                 // debug(w);
 
-                while (i < n && q[i].ff <= w) 
+                // since q is vp find which index is greater than w ; search before it
+                int l = upper_bound(q.begin()+l, q.end(), make_pair(w, INT_MAX))-q.begin();
+
+                while (i < l && q[i].ff <= w) 
                 {
                     pq.push(q[i].ss);
                     i++;
