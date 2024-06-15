@@ -9,6 +9,7 @@
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
+| [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 
 
 # Dynamic Programming
@@ -61,6 +62,7 @@
 # Greedy
 |  |
 | ------- |
+| [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
@@ -68,6 +70,7 @@
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
+| [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
@@ -78,6 +81,7 @@
 # Heap (Priority Queue)
 |  |
 | ------- |
+| [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # Simulation
 |  |
