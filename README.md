@@ -10,6 +10,7 @@
 | [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
+| [0330-patching-array](https://github.com/HardikJainGit/LeetCode/tree/master/0330-patching-array) |
 
 
 # Dynamic Programming
@@ -62,6 +63,7 @@
 # Greedy
 |  |
 | ------- |
+| [0330-patching-array](https://github.com/HardikJainGit/LeetCode/tree/master/0330-patching-array) |
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
