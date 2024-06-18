@@ -17,6 +17,7 @@
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/HardikJainGit/LeetCode/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [1250-longest-common-subsequence](https://github.com/HardikJainGit/LeetCode/tree/master/1250-longest-common-subsequence) |
 # Binary Indexed Tree
 |  |
 | ------- |
@@ -59,6 +60,7 @@
 | ------- |
 | [0013-roman-to-integer](https://github.com/HardikJainGit/LeetCode/tree/master/0013-roman-to-integer) |
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
+| [1250-longest-common-subsequence](https://github.com/HardikJainGit/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # Greedy
 |  |
