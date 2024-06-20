@@ -84,13 +84,6 @@ public:
             }
         }
 
-        // cout << lo;
-
-        if(condition(lo,position,m))
-        {
-            return lo;
-        }
-
-        return hi;
+        return lo;
     }
 };
