@@ -12,6 +12,7 @@
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [0330-patching-array](https://github.com/HardikJainGit/LeetCode/tree/master/0330-patching-array) |
 | [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
+| [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HardikJainGit/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 
 
 # Dynamic Programming
@@ -121,4 +122,5 @@
 # Binary Search
 |  |
 | ------- |
+| [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HardikJainGit/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
