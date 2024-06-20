@@ -13,6 +13,7 @@
 | [0330-patching-array](https://github.com/HardikJainGit/LeetCode/tree/master/0330-patching-array) |
 | [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HardikJainGit/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
+| [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 
 
 # Dynamic Programming
@@ -69,6 +70,7 @@
 | ------- |
 | [0330-patching-array](https://github.com/HardikJainGit/LeetCode/tree/master/0330-patching-array) |
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
+| [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
@@ -77,6 +79,7 @@
 | ------- |
 | [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
+| [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
@@ -103,6 +106,7 @@
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/HardikJainGit/LeetCode/tree/master/0075-sort-colors) |
+| [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 # Math
 |  |
 | ------- |
@@ -122,5 +126,6 @@
 # Binary Search
 |  |
 | ------- |
+| [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HardikJainGit/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
