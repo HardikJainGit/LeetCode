@@ -11,6 +11,7 @@
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [0330-patching-array](https://github.com/HardikJainGit/LeetCode/tree/master/0330-patching-array) |
+| [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 
 
 # Dynamic Programming
@@ -78,6 +79,7 @@
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
+| [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 # Stack
 |  |
 | ------- |
@@ -116,3 +118,7 @@
 |  |
 | ------- |
 | [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
+# Binary Search
+|  |
+| ------- |
+| [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
