@@ -13,27 +13,14 @@ using namespace std;
 #define ff first
 #define ss second
 
-//Input: customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], minutes = 3
-
 class Solution {
 public:
-    // int extraprofit(vi &customers, vi &grumpy , int m,int l , int r)
-    // {
-    //     int e = 0;
-    //     fz(i,l,r+1)
-    //     {
-    //         if(grumpy[i])
-    //         {
-    //             e += customers[i];
-    //         }
-    //     }
-
-    //     return e;
-    // }
     int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes) 
     {
         int cc = 0;
         int n = sz(grumpy);
+
+        // find total satisfied customers
         
         f(n)
         {
@@ -51,6 +38,9 @@ public:
         int ret = cc;
 
         int unsatis = 0;
+
+        // find unsatisfied customers in the first sliding window
+
         f(m)
         {
             if (grumpy[i]) 
@@ -61,11 +51,10 @@ public:
 
         m_e = unsatis;
 
-        // cout << cc;
+        // find the maximum unsatisfied customers in any sliding window
 
         fz(i,m,n)
         {
-            // int e = extraprofit(customers,grumpy,m,l,r);
             if(grumpy[i-m])
             {
                 unsatis -= customers[i-m];
@@ -74,11 +63,10 @@ public:
             {
                 unsatis += customers[i];
             }
-            // m_e = max(m_e , e);
-            // l += 1;
-            // r += 1;
             m_e = max(m_e , unsatis);
         }
+
+        // convert the unsatisfied customers to satisfied customers
 
         return cc + m_e;
 
