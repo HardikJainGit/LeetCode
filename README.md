@@ -14,6 +14,7 @@
 | [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HardikJainGit/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
+| [1138-grumpy-bookstore-owner](https://github.com/HardikJainGit/LeetCode/tree/master/1138-grumpy-bookstore-owner) |
 
 
 # Dynamic Programming
@@ -129,3 +130,7 @@
 | [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HardikJainGit/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
+# Sliding Window
+|  |
+| ------- |
+| [1138-grumpy-bookstore-owner](https://github.com/HardikJainGit/LeetCode/tree/master/1138-grumpy-bookstore-owner) |
