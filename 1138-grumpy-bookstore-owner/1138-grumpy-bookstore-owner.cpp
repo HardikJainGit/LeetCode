@@ -17,19 +17,19 @@ using namespace std;
 
 class Solution {
 public:
-    int extraprofit(vi &customers, vi &grumpy , int m,int l , int r)
-    {
-        int e = 0;
-        fz(i,l,r+1)
-        {
-            if(grumpy[i])
-            {
-                e += customers[i];
-            }
-        }
+    // int extraprofit(vi &customers, vi &grumpy , int m,int l , int r)
+    // {
+    //     int e = 0;
+    //     fz(i,l,r+1)
+    //     {
+    //         if(grumpy[i])
+    //         {
+    //             e += customers[i];
+    //         }
+    //     }
 
-        return e;
-    }
+    //     return e;
+    // }
     int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes) 
     {
         int cc = 0;
@@ -48,13 +48,36 @@ public:
         int l = 0;
         int r = m - 1;
         int m_e = INT_MIN;
+        int ret = cc;
 
-        while(r < n)
+        int unsatis = 0;
+        f(m)
         {
-            int e = extraprofit(customers,grumpy,m,l,r);
-            m_e = max(m_e , e);
-            l += 1;
-            r += 1;
+            if (grumpy[i]) 
+            {
+                unsatis += customers[i];
+            }
+        }
+
+        m_e = unsatis;
+
+        // cout << cc;
+
+        fz(i,m,n)
+        {
+            // int e = extraprofit(customers,grumpy,m,l,r);
+            if(grumpy[i-m])
+            {
+                unsatis -= customers[i-m];
+            }
+            if(grumpy[i])
+            {
+                unsatis += customers[i];
+            }
+            // m_e = max(m_e , e);
+            // l += 1;
+            // r += 1;
+            m_e = max(m_e , unsatis);
         }
 
         return cc + m_e;
