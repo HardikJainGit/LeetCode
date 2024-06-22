@@ -42,27 +42,49 @@ public:
             pr[i+1] = pr[i] + nums[i];
         }
 
-        int l = 0;
-        int r = 1;
-        int cc = 0;
+        // int l = 0;
+        // int r = 1;
+        // int cc = 0;
 
-        unordered_map<int, int> prefix_count;
-        prefix_count[0] = 1;
+        // unordered_map<int, int> prefix_count;
+        // prefix_count[0] = 1;
 
-        fz(r,1,n+1)
+        // fz(r,1,n+1)
+        // {
+        //     // The two sum logic used to get number of pairs with difference of k !
+        //     // Do not use two pointers to get number of pairs with difference k !
+        //     // Remember !
+
+        //     if(prefix_count.find(pr[r] - k) != prefix_count.end())
+        //     {
+        //         cc += prefix_count[pr[r] - k];
+        //     }
+
+        //     prefix_count[pr[r]] += 1;
+        // }
+
+        // return cc;
+        
+        int l=0, cc=0;
+
+        fz(r,0,n)
         {
-            // The two sum logic used to get number of pairs with difference of k !
-            // Do not use two pointers to get number of pairs with difference k !
-            // Remember !
+            // Ensure the current window [l, r] has at least k odd numbers
+            while (l<=r && pr[r+1] - pr[l] > k) 
+                l++;
 
-            if(prefix_count.find(pr[r] - k) != prefix_count.end())
+            // If the current window [l, r] has exactly k odd numbers
+            if (pr[r+1]-pr[l] == k) 
             {
-                cc += prefix_count[pr[r] - k];
+                int l0 = l;
+                // Count nice subarrays ending at r
+                while (l0 <= r && pr[r+1]-pr[l0] == k) 
+                {
+                    cc++;
+                    l0++;
+                }
             }
-
-            prefix_count[pr[r]] += 1;
         }
-
         return cc;
     }
 };
