@@ -15,6 +15,7 @@
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HardikJainGit/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 | [1138-grumpy-bookstore-owner](https://github.com/HardikJainGit/LeetCode/tree/master/1138-grumpy-bookstore-owner) |
+| [1370-count-number-of-nice-subarrays](https://github.com/HardikJainGit/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 
 
 # Dynamic Programming
@@ -56,6 +57,7 @@
 | [0409-longest-palindrome](https://github.com/HardikJainGit/LeetCode/tree/master/0409-longest-palindrome) |
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
+| [1370-count-number-of-nice-subarrays](https://github.com/HardikJainGit/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3420-find-occurrences-of-an-element-in-an-array](https://github.com/HardikJainGit/LeetCode/tree/master/3420-find-occurrences-of-an-element-in-an-array) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/HardikJainGit/LeetCode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -115,6 +117,7 @@
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/HardikJainGit/LeetCode/tree/master/0013-roman-to-integer) |
+| [1370-count-number-of-nice-subarrays](https://github.com/HardikJainGit/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 # Breadth-First Search
 |  |
 | ------- |
@@ -137,3 +140,4 @@
 |  |
 | ------- |
 | [1138-grumpy-bookstore-owner](https://github.com/HardikJainGit/LeetCode/tree/master/1138-grumpy-bookstore-owner) |
+| [1370-count-number-of-nice-subarrays](https://github.com/HardikJainGit/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
