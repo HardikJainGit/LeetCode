@@ -36,12 +36,14 @@
 |  |
 | ------- |
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
+| [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Depth-First Search
 |  |
 | ------- |
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
+| [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
@@ -49,6 +51,7 @@
 |  |
 | ------- |
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
+| [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Hash Table
