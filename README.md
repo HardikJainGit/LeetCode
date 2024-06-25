@@ -38,6 +38,7 @@
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
+| [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Depth-First Search
 |  |
@@ -46,6 +47,7 @@
 | [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
+| [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Binary Tree
 |  |
@@ -53,6 +55,7 @@
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
+| [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Hash Table
 |  |
@@ -159,3 +162,7 @@
 |  |
 | ------- |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/HardikJainGit/LeetCode/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+# Binary Search Tree
+|  |
+| ------- |
+| [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
