@@ -17,6 +17,7 @@
 | [1138-grumpy-bookstore-owner](https://github.com/HardikJainGit/LeetCode/tree/master/1138-grumpy-bookstore-owner) |
 | [1370-count-number-of-nice-subarrays](https://github.com/HardikJainGit/LeetCode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/HardikJainGit/LeetCode/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 
 
 # Dynamic Programming
@@ -35,6 +36,7 @@
 # Tree
 |  |
 | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
@@ -52,6 +54,7 @@
 # Binary Tree
 |  |
 | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0437-path-sum-iii](https://github.com/HardikJainGit/LeetCode/tree/master/0437-path-sum-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
@@ -61,6 +64,7 @@
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/HardikJainGit/LeetCode/tree/master/0013-roman-to-integer) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0409-longest-palindrome](https://github.com/HardikJainGit/LeetCode/tree/master/0409-longest-palindrome) |
 | [1044-find-common-characters](https://github.com/HardikJainGit/LeetCode/tree/master/1044-find-common-characters) |
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
@@ -166,3 +170,7 @@
 |  |
 | ------- |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
+# Divide and Conquer
+|  |
+| ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
