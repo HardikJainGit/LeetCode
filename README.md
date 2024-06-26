@@ -41,6 +41,7 @@
 | [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
+| [1285-balance-a-binary-search-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Depth-First Search
 |  |
@@ -50,6 +51,7 @@
 | [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
+| [1285-balance-a-binary-search-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Binary Tree
 |  |
@@ -59,6 +61,7 @@
 | [0543-diameter-of-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1021-distribute-coins-in-binary-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1021-distribute-coins-in-binary-tree) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
+| [1285-balance-a-binary-search-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/HardikJainGit/LeetCode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 # Hash Table
 |  |
@@ -89,6 +92,7 @@
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [0853-most-profit-assigning-work](https://github.com/HardikJainGit/LeetCode/tree/master/0853-most-profit-assigning-work) |
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
+| [1285-balance-a-binary-search-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # Sorting
@@ -170,7 +174,9 @@
 |  |
 | ------- |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
+| [1285-balance-a-binary-search-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 # Divide and Conquer
 |  |
 | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [1285-balance-a-binary-search-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
