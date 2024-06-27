@@ -17,19 +17,39 @@ class Solution {
 public:
     int findCenter(vector<vector<int>>& edges) 
     {
-        unordered_map<int,int> m;
+        // unordered_map<int,int> m;
+        int rep = -1;
+        int x = -1;
+        int y = -1;
+        int f = 0;
         for(auto it : edges)
         {
-            m[it[1]] += 1;
-            m[it[0]] += 1;
-        }
-        for(auto it : m)
-        {
-            if(it.ss > 1)
+            if(it[0] == x || it[1] == x)
             {
-                return it.ff;
+                return x;
             }
+
+            if(it[0] == y || it[1] == y)
+            {
+                return y;
+            }
+            
+            if(!f)
+            {
+                x = it[0]; y = it[1];
+                f = 1;
+            }
+
+            // m[it[1]] += 1;
+            // m[it[0]] += 1;
         }
+        // for(auto it : m)
+        // {
+        //     if(it.ss > 1)
+        //     {
+        //         return it.ff;
+        //     }
+        // }
         return -1;
     }
 };
