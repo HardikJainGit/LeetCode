@@ -94,6 +94,7 @@
 | [0982-minimum-increment-to-make-array-unique](https://github.com/HardikJainGit/LeetCode/tree/master/0982-minimum-increment-to-make-array-unique) |
 | [1285-balance-a-binary-search-tree](https://github.com/HardikJainGit/LeetCode/tree/master/1285-balance-a-binary-search-tree) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
+| [2379-maximum-total-importance-of-roads](https://github.com/HardikJainGit/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # Sorting
 |  |
@@ -105,6 +106,7 @@
 | [1217-relative-sort-array](https://github.com/HardikJainGit/LeetCode/tree/master/1217-relative-sort-array) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/HardikJainGit/LeetCode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1675-magnetic-force-between-two-balls](https://github.com/HardikJainGit/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
+| [2379-maximum-total-importance-of-roads](https://github.com/HardikJainGit/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 # Stack
 |  |
 | ------- |
@@ -114,6 +116,7 @@
 | ------- |
 | [0502-ipo](https://github.com/HardikJainGit/LeetCode/tree/master/0502-ipo) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/HardikJainGit/LeetCode/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [2379-maximum-total-importance-of-roads](https://github.com/HardikJainGit/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/HardikJainGit/LeetCode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 # Simulation
 |  |
@@ -147,6 +150,7 @@
 | ------- |
 | [0801-is-graph-bipartite](https://github.com/HardikJainGit/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1916-find-center-of-star-graph](https://github.com/HardikJainGit/LeetCode/tree/master/1916-find-center-of-star-graph) |
+| [2379-maximum-total-importance-of-roads](https://github.com/HardikJainGit/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 # Binary Search
 |  |
 | ------- |
