@@ -191,17 +191,20 @@
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/HardikJainGit/LeetCode/tree/master/0199-binary-tree-right-side-view) |
+| [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/HardikJainGit/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/HardikJainGit/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/HardikJainGit/LeetCode/tree/master/0199-binary-tree-right-side-view) |
+| [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/HardikJainGit/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/HardikJainGit/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 ## Graph
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/HardikJainGit/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/HardikJainGit/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/HardikJainGit/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
@@ -212,6 +215,7 @@
 ## Union Find
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/HardikJainGit/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 ## Tree
 |  |
@@ -221,4 +225,16 @@
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/HardikJainGit/LeetCode/tree/master/0199-binary-tree-right-side-view) |
+## Array
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
+## String
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
+## Shortest Path
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 <!---LeetCode Topics End-->
