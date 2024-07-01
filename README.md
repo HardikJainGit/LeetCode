@@ -190,6 +190,7 @@
 ## Depth-First Search
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/HardikJainGit/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 | [0733-flood-fill](https://github.com/HardikJainGit/LeetCode/tree/master/0733-flood-fill) |
@@ -223,10 +224,12 @@
 ## Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/HardikJainGit/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 ## Binary Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/HardikJainGit/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 ## Array
 |  |
@@ -247,4 +250,8 @@
 | ------- |
 | [0733-flood-fill](https://github.com/HardikJainGit/LeetCode/tree/master/0733-flood-fill) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/HardikJainGit/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+## Stack
+|  |
+| ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/HardikJainGit/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 <!---LeetCode Topics End-->
