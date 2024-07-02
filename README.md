@@ -204,6 +204,7 @@
 | [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 | [0433-minimum-genetic-mutation](https://github.com/HardikJainGit/LeetCode/tree/master/0433-minimum-genetic-mutation) |
 | [0733-flood-fill](https://github.com/HardikJainGit/LeetCode/tree/master/0733-flood-fill) |
+| [0945-snakes-and-ladders](https://github.com/HardikJainGit/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/HardikJainGit/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/HardikJainGit/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/HardikJainGit/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -240,6 +241,7 @@
 | ------- |
 | [0399-evaluate-division](https://github.com/HardikJainGit/LeetCode/tree/master/0399-evaluate-division) |
 | [0733-flood-fill](https://github.com/HardikJainGit/LeetCode/tree/master/0733-flood-fill) |
+| [0945-snakes-and-ladders](https://github.com/HardikJainGit/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/HardikJainGit/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## String
 |  |
@@ -254,6 +256,7 @@
 |  |
 | ------- |
 | [0733-flood-fill](https://github.com/HardikJainGit/LeetCode/tree/master/0733-flood-fill) |
+| [0945-snakes-and-ladders](https://github.com/HardikJainGit/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/HardikJainGit/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Stack
 |  |
